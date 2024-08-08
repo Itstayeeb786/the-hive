@@ -10,9 +10,6 @@ export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-2" />
-      <p className="text-black dark:text-white">
-        The Navbar will show on top of the page
-      </p>
     </div>
   );
 }
@@ -22,7 +19,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <Navbar />
+      <Navbar className=" top-3 " />
       <Background />
 
       <div className="relative flex place-items-center mt-12">
