@@ -35,14 +35,16 @@ function Navbar({ className }: { className?: string }) {
             </div>
           </MenuItem>
         </a>
-        <MenuItem setActive={setActive} active={active} item="Register">
-          <div className="flex flex-col space-y-4 text-sm ">
-            <HoveredLink href="/">Hobby</HoveredLink>
-            <HoveredLink href="/">Individual</HoveredLink>
-            <HoveredLink href="/">Team</HoveredLink>
-            <HoveredLink href="/">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <a href="/businesses">
+          <MenuItem setActive={setActive} active={active} item="Register">
+            <div className="flex flex-col space-y-4 text-sm ">
+              <HoveredLink href="/">Hobby</HoveredLink>
+              <HoveredLink href="/">Individual</HoveredLink>
+              <HoveredLink href="/">Team</HoveredLink>
+              <HoveredLink href="/">Enterprise</HoveredLink>
+            </div>
+          </MenuItem>
+        </a>
 
         <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-3">
           Contact Us

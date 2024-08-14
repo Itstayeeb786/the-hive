@@ -5,6 +5,7 @@ import Background from "@/components/wrappers/background";
 import React, { useState } from "react";
 import Navbar from "@/components/ui/navbar";
 import FeaturesSectionDemo from "@/components/ui/features-section-demo-3";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 export function NavbarDemo() {
@@ -45,10 +46,8 @@ export default function Home() {
         </p>
         <div className="text-overlay absolute bottom-0 right-0 flex ">
           <a
-            href="3"
+            href="/businesses"
             className="pt-5 group rounded-lg border border-transparent transition-colors hover:border-gray-300  hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-56"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={` mb-3 text-2xl font-semibold text-white`}>
               Sign Up{" "}
