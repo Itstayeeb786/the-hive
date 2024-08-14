@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Background from "@/components/wrappers/background";
 import React, { useState } from "react";
 import Navbar from "@/components/ui/navbar";
+import FeaturesSectionDemo from "@/components/ui/features-section-demo-3";
 
 const inter = Inter({ subsets: ["latin"] });
 export function NavbarDemo() {
@@ -39,50 +40,51 @@ export default function Home() {
           priority
           className="top-6 right-0 text-overlay absolute "
         />
-        <p className="text-overlay absolute top-24 right-40 text-7xl  font-extrabold ">
+        <p className="text-overlay absolute top-24 right-40 text-7xl text-white  font-extrabold ">
           THE HIVE
         </p>
         <div className="text-overlay absolute bottom-0 right-0 flex ">
           <a
             href="3"
-            className="pt-5 group rounded-lg border border-transparent transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-56"
+            className="pt-5 group rounded-lg border border-transparent transition-colors hover:border-gray-300  hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-56"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={` mb-3 text-2xl font-semibold`}>
+            <h2 className={` mb-3 text-2xl font-semibold text-white`}>
               Sign Up{" "}
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-white`}>
               Create Your Account to view, review and also post your Business!
             </p>
           </a>
           <a
             href="3"
-            className=" pt-5 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-orange-300 hover:bg-gray-100 hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-96"
+            className=" pt-5 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-orange-300  hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-96"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
+            <h2 className={`mb-3 text-2xl font-semibold text-white`}>
               Access User Dashboard{" "}
               <span className="inline-block transition-transform group-hover:translate-x-3 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-white`}>
               Sign-in or go to your user dashboard if already signed and view
               your business
             </p>
           </a>
         </div>
       </div>
+      <FeaturesSectionDemo />
 
-      <p className="mt-24 fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 font-bold ">
+      <p className="mt-24 fixed left-0 top-0 flex w-full justify-center border-b border-orange-900  lg:static lg:w-auto  lg:rounded-xl lg:border text-white lg:p-4 lg:dark:bg-zinc-800/30 font-bold bg-black bg-opacity-60  ">
         View Businesses
       </p>
-      <div className="mt-16 container mx-auto px-4  border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+      <div className="mt-16 container mx-auto px-4  border-gray-300 bg-gradient-to-b from-orange-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30 bg-black bg-opacity-60 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="bg-gray-900 p-6 rounded-lg shadow-md">
             <div className="h-32 bg-gray-300 rounded-lg"></div>

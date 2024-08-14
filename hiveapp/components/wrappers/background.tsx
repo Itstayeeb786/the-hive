@@ -7,7 +7,7 @@ export default function Background() {
       <Image
         src={bgimage}
         alt="bg"
-        className="inset-0 fixed z-[-999] w-full h-screen object-cover opacity-70 blur-sm"
+        className="inset-0 fixed z-[-999] w-full h-screen object-cover  blur-sm"
       />
     </>
   );
