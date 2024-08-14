@@ -150,9 +150,11 @@ export default function Home() {
               View
             </button>
           </div>
-          <button className="bg-gray-600 hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mt-4">
-            View More
-          </button>
+          <a href="/businesses">
+            <button className="bg-gray-600 hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mt-4">
+              View More
+            </button>
+          </a>
         </div>
       </div>
     </main>
