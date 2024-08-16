@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <p>WELCOME TO MY CODE BTW!!!!</p>
     </div>
   );
 }
@@ -21,7 +21,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <Navbar className=" top-3 " />
+      <Navbar />
       <Background />
 
       <div className="relative flex place-items-center mt-12">
@@ -46,7 +46,7 @@ export default function Home() {
         </p>
         <div className="text-overlay absolute bottom-0 right-0 flex ">
           <a
-            href="/businesses"
+            href="/register"
             className="pt-5 group rounded-lg border border-transparent transition-colors hover:border-gray-300  hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-56"
           >
             <h2 className={` mb-3 text-2xl font-semibold text-white`}>

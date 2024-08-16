@@ -1,14 +1,12 @@
 import Navbar from "@/components/ui/navbar";
 import Background from "@/components/wrappers/background";
 
-const register = () => {
+const Contact = () => {
   return (
-    <main>
-      <div>
-        <Navbar />
-      </div>
-    </main>
+    <div>
+      <Navbar />
+    </div>
   );
 };
 
-export default register;
+export default Contact;

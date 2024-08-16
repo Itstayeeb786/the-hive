@@ -16,7 +16,7 @@ import { features } from "process";
 export default function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Track issues effectively",
+      title: "Lorem Ipsum",
       description:
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
@@ -24,7 +24,7 @@ export default function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-900 text-white ",
     },
     {
-      title: "Capture pictures with AI",
+      title: "Lorem Ipsum",
       description:
         "Capture stunning photos effortlessly using our advanced AI technology.",
       skeleton: <SkeletonTwo />,
@@ -32,7 +32,7 @@ export default function FeaturesSectionDemo() {
         "border-b col-span-1 text-white lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our AI on YouTube",
+      title: "Lorem Ipsum",
       description:
         "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
       skeleton: <SkeletonThree />,
@@ -40,7 +40,7 @@ export default function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
+      title: "Lorem Ipsum",
       description:
         "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
       skeleton: <SkeletonFour />,
@@ -51,12 +51,14 @@ export default function FeaturesSectionDemo() {
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
+          About The Hive
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quam
+          voluptatum, ab omnis laboriosam facere fugiat eveniet, nihil
+          asperiores deleniti ut, similique quod vitae praesentium? Earum
+          accusamus quasi impedit possimus.
         </p>
       </div>
 

@@ -22,7 +22,7 @@ function Navbar({ className }: { className?: string }) {
           priority
           className=" items-center "
         />
-        <a href="/" className="mt-5 font-bold">
+        <a href="/" className="mt-5 font-bold text-white">
           Home
         </a>
         <a href="/businesses">
@@ -35,7 +35,7 @@ function Navbar({ className }: { className?: string }) {
             </div>
           </MenuItem>
         </a>
-        <a href="/businesses">
+        <a href="/register">
           <MenuItem setActive={setActive} active={active} item="Register">
             <div className="flex flex-col space-y-4 text-sm ">
               <HoveredLink href="/">Hobby</HoveredLink>
@@ -45,10 +45,11 @@ function Navbar({ className }: { className?: string }) {
             </div>
           </MenuItem>
         </a>
-
-        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-3">
-          Contact Us
-        </button>
+        <a href="/contact">
+          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-3">
+            Contact Us
+          </button>
+        </a>
       </Menu>
     </div>
   );
