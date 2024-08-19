@@ -6,7 +6,7 @@ const Businesses = () => {
   return (
     <main>
       <div>
-        <Navbar />
+        <Navbar className="mt-4" />
       </div>
     </main>
   );

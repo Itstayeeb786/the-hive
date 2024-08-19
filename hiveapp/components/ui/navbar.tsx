@@ -7,12 +7,21 @@ import {
   ProductItem,
 } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { FiMenu, FiX } from "react-icons/fi"; // Importing icons for the hamburger menu
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false); // State for handling menu open/close
+
   return (
-    <div className={cn("top-10 inset-x-0 w-9/12 mx-auto z-50 ", className)}>
-      <Menu setActive={setActive}>
+    <div
+      className={cn(
+        " rounded-3xl top-0 inset-x-0 w-full z-50 bg-black",
+        className
+      )}
+    >
+      <div className="flex items-center justify-between p-4">
+        {/* Logo */}
         <Image
           src="/applogo.png"
           alt="Hive Logo"
@@ -20,37 +29,69 @@ function Navbar({ className }: { className?: string }) {
           width={150}
           height={20}
           priority
-          className=" items-center "
+          className="flex items-center"
         />
-        <a href="/" className="mt-5 font-bold text-white">
-          Home
-        </a>
-        <a href="/businesses">
-          <MenuItem setActive={setActive} active={active} item="Businesses">
-            <div className="flex flex-col space-y-4 text-sm ">
-              <HoveredLink href="/">Web Development</HoveredLink>
-              <HoveredLink href="/">Interface Design</HoveredLink>
-              <HoveredLink href="/">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/">Branding</HoveredLink>
-            </div>
-          </MenuItem>
-        </a>
-        <a href="/register">
-          <MenuItem setActive={setActive} active={active} item="Register">
-            <div className="flex flex-col space-y-4 text-sm ">
-              <HoveredLink href="/">Hobby</HoveredLink>
-              <HoveredLink href="/">Individual</HoveredLink>
-              <HoveredLink href="/">Team</HoveredLink>
-              <HoveredLink href="/">Enterprise</HoveredLink>
-            </div>
-          </MenuItem>
-        </a>
-        <a href="/contact">
-          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-3">
+
+        {/* Hamburger Menu Icon for Mobile */}
+        <button
+          className="sm:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+
+        {/* Desktop Menu */}
+        <div className="hidden sm:flex space-x-6 font-bold text-white">
+          <a href="/" className="hover:text-orange-500">
+            Home
+          </a>
+          <a href="/businesses" className="hover:text-orange-500">
+            Businesses
+          </a>
+          <a href="/register" className="hover:text-orange-500">
+            Register
+          </a>
+          <a href="/contact">
+            <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+              Contact Us
+            </button>
+          </a>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="sm:hidden bg-gray-800 text-white text-center">
+          <a
+            href="/"
+            className="block py-2 hover:bg-gray-700"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </a>
+          <a
+            href="/businesses"
+            className="block py-2 hover:bg-gray-700"
+            onClick={() => setMenuOpen(false)}
+          >
+            Businesses
+          </a>
+          <a
+            href="/register"
+            className="block py-2 hover:bg-gray-700"
+            onClick={() => setMenuOpen(false)}
+          >
+            Register
+          </a>
+          <a
+            href="/contact"
+            className="block py-2 hover:bg-gray-700"
+            onClick={() => setMenuOpen(false)}
+          >
             Contact Us
-          </button>
-        </a>
-      </Menu>
+          </a>
+        </div>
+      )}
     </div>
   );
 }

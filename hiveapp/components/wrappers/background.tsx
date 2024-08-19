@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bgimage from "@/public/bg.jpeg";
+import bgimage from "@/public/baground.png";
 
 export default function Background() {
   return (
@@ -7,7 +7,7 @@ export default function Background() {
       <Image
         src={bgimage}
         alt="bg"
-        className="inset-0 fixed z-[-999] w-full h-screen object-cover  blur-sm"
+        className="inset-0 fixed z-[-999] w-full h-screen object-cover   "
       />
     </>
   );
