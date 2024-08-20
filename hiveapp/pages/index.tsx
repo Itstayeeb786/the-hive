@@ -24,7 +24,7 @@ export default function Home() {
           width={1720}
           height={24}
           priority
-          className="rounded-xl sm:rounded-2xl"
+          className="rounded-xl sm:rounded-2xl shadow-2x1"
         />
         <Image
           src="/hive.png"
@@ -78,7 +78,7 @@ export default function Home() {
         View Businesses
       </p>
 
-      <div className=" bg-white bg-blur-2xl bg-opacity-70 rounded-md shadow-2xl mt-16 container mx-auto px-4   pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30 ">
+      <div className=" bg-gray-200 bg-blur-2xl bg-opacity-70 rounded-md shadow-2xl mt-16 container mx-auto px-4   pb-6 pt-8  dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div
             className="bg-gray-700 bg-opacity-80 p-4 sm:p-6 rounded-lg shadow-md "

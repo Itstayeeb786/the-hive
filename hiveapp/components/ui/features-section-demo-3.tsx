@@ -63,7 +63,7 @@ export default function FeaturesSectionDemo() {
       </div>
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border bg-white bg-blur-2xl bg-opacity-70 rounded-md shadow-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border bg-gray-200 bg-blur-2xl bg-opacity-70 rounded-md shadow-2xl">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -220,7 +220,7 @@ export const SkeletonTwo = () => {
       </div>
 
       <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />
-      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-white dark:from-black  to-transparent h-full pointer-events-none" />
+      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-red-500 dark:from-black  to-transparent h-full pointer-events-none" />
     </div>
   );
 };
@@ -252,12 +252,22 @@ export const Globe = ({ className }: { className?: string }) => {
       mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [0.3, 0.3, 0.3],
-      markerColor: [0.1, 0.8, 1],
+      markerColor: [215, 115, 0],
       glowColor: [1, 1, 1],
       markers: [
         // longitude latitude
-        { location: [37.7595, -122.4367], size: 0.03 },
-        { location: [40.7128, -74.006], size: 0.1 },
+        { location: [37.7595, -122.4367], size: 0.05 },
+        { location: [40.7128, -74.006], size: 0.05 },
+        { location: [49.7128, -71.006], size: 0.05 },
+        { location: [17.7595, -10.4367], size: 0.05 },
+        { location: [29.7128, -7.006], size: 0.05 },
+        { location: [28.7128, -0.006], size: 0.05 },
+        { location: [0.0236, 37.9062], size: 0.05 },
+        { location: [51.9253, 14.235], size: 0.05 },
+        { location: [8, 79], size: 0.05 },
+        { location: [-25, 135], size: 0.05 },
+        { location: [35, 105], size: 0.05 },
+        { location: [51.9253, 114.235], size: 0.05 },
       ],
       onRender: (state) => {
         // Called on every animation frame.
@@ -275,7 +285,7 @@ export const Globe = ({ className }: { className?: string }) => {
   return (
     <canvas
       ref={canvasRef}
-      style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
+      style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 8 }}
       className={className}
     />
   );

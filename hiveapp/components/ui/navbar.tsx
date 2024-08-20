@@ -16,7 +16,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        " rounded-3xl top-0 inset-x-0 w-full z-50 bg-black",
+        " rounded-3xl top-0 inset-x-0 w-full z-50  bg-black bg-opacity-75",
         className
       )}
     >
@@ -41,14 +41,14 @@ function Navbar({ className }: { className?: string }) {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden sm:flex space-x-6 font-bold text-white">
-          <a href="/" className="hover:text-orange-500">
+        <div className="hidden sm:flex space-x-6 font-bold  text-white">
+          <a href="/" className="hover:text-orange-500 mt-2">
             Home
           </a>
-          <a href="/businesses" className="hover:text-orange-500">
+          <a href="/businesses" className="hover:text-orange-500 mt-2">
             Businesses
           </a>
-          <a href="/register" className="hover:text-orange-500">
+          <a href="/register" className="hover:text-orange-500 mt-2">
             Register
           </a>
           <a href="/contact">
