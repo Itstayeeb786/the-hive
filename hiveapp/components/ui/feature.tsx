@@ -14,7 +14,7 @@ export function FeaturesSectionDemo() {
       description:
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
-      className: "col-span-1 dark:border-neutral-800 text-white",
+      className: "col-span-1 dark:border-neutral-100 text-white",
     },
   ];
   return (

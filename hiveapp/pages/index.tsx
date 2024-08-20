@@ -53,7 +53,7 @@ export default function Home() {
             </p>
           </a>
           <a
-            href="3"
+            href="/admin"
             className="pt-5 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-orange-300 hover:dark:border-neutral-10 hover:dark:bg-neutral-800/30 mb-10 w-full sm:w-96 text-center"
             target="_blank"
             rel="noopener noreferrer"

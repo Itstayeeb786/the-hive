@@ -122,7 +122,7 @@ export const SkeletonOne = () => {
           <Image
             src="/bg.jpg"
             alt="header"
-            width={800}
+            width={1000}
             height={800}
             className="h-full w-full aspect-square object-cover object-left-top rounded-sm"
           />
@@ -219,8 +219,8 @@ export const SkeletonTwo = () => {
         ))}
       </div>
 
-      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />
-      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-red-500 dark:from-black  to-transparent h-full pointer-events-none" />
+      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-orange-100 dark:from-black to-transparent  h-full pointer-events-none" />
+      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-orange-100 dark:from-black  to-transparent h-full pointer-events-none" />
     </div>
   );
 };
