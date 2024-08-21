@@ -23,25 +23,19 @@ const Admin = () => {
                       href="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                     >
-                      Team
+                      My Businesses
                     </a>
                     <a
                       href="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                     >
-                      Projects
+                      Add Businesses
                     </a>
                     <a
                       href="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                     >
-                      Calendar
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                    >
-                      Reports
+                      Sign Out
                     </a>
                   </div>
                 </div>
@@ -182,25 +176,19 @@ const Admin = () => {
                 href="#"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Team
+                My Businesses
               </a>
               <a
                 href="#"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Projects
+                Add Businesses
               </a>
               <a
                 href="#"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Calendar
-              </a>
-              <a
-                href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >
-                Reports
+                Reviews
               </a>
             </div>
             <div className="border-t border-gray-700 pb-3 pt-4">
