@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen  ">
+    <div className="flex flex-col   ">
       <Background />
-      <footer className="bg-black bg-opacity-70 dark:bg-gray-900 w-auto mt-auto">
+      <footer className="bg-black bg-opacity-70 dark:bg-gray-900 w-auto mb-auto">
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             <div>

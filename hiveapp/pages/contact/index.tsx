@@ -119,34 +119,18 @@ const Contact = () => {
               </div>
               <div className="mb-6">
                 <label
-                  htmlFor="password"
-                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                  htmlFor="text-box"
+                  className="block mb-2 font-medium text-white dark:text-white"
                 >
-                  Password
+                  Reason For Contact
                 </label>
-                <input
-                  type="password"
-                  id="password"
+                <textarea
+                  id="text-box"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
-                  placeholder="•••••••••"
-                  required
+                  placeholder="Enter text here"
                 />
               </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="confirm_password"
-                  className="block mb-2 text-sm font-medium text-white dark:text-white"
-                >
-                  Confirm password
-                </label>
-                <input
-                  type="password"
-                  id="confirm_password"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-orange-300-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orborder-orange-300-500 dark:focus:border-red-500"
-                  placeholder="•••••••••"
-                  required
-                />
-              </div>
+
               <div className="flex items-start mb-6">
                 <div className="flex items-center h-5">
                   <input
